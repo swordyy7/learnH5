@@ -1,12 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
 	<meta charset="UTF-8">
+	<meta charset="utf-8" name="author" content="Y小剑">
+	<meta charset="utf-8" name="description" content="一个H5 Demo">
 	<title>标签a的使用</title>
+	<link rel="shortcut icon" type="image/x-icon" href="source/Y_logo.png">
+	<style type="text/css">
+		
+	strong {
+
+		font-weight: bolder;
+	}
+
+	.favorites {
+
+		background-color: grey;
+		color: white;
+		border: thin black solid;
+		padding: 0.2em;
+	}
+
+	aside {
+
+		width: 40%;
+		background-color: white;
+		float: right;
+		border: thick solid black;
+		margin-left: 5px;
+	}
+
+	nav{
+
+		background-color: green;
+		text-align: center;
+		border: thin solid red;
+		border-width: 1px;
+		color: white;
+	}
+
+	div{
+
+		margin-top: 20px;
+	}
+
+	</style>
 </head>
-<body>	
+<body>
+
+<nav>
+<header>
+
+	<hgroup>
+		
+		<h1>学习Html5</h1>
+		<h2>by Y小剑</h2>
+
+	</hgroup>
 	
-<div style="font-size: 22px">a标签的使用</div>
+<address>
+	如果发现问题的话,<a href="http://www.baidu.com">请联系我</a>
+</address>
+
+</header>	
+</nav>
+
+	
+<div style="font-size: 22px">a标签的使用
+
+<a href="#apples">给你看看另一个苹果</a>
+
+
+<p id="apples">这个苹果又大,又红,又圆</p>
+</div>
+
+I like <strong>apple</strong>,I like <b>pen</b>.
+<p>我正在学习<i>html</i></p>
+<s>我是个天才</s>
+<strong>Warning:</strong>外星人正在接近.<small>(嘿嘿!)</small>
+<abbr title="这是完整的一个句子">ZSWZDJZ</abbr>
+<br>
+<q>菜根谭</q>是一部奇作.
+<p>我真<mark>聪明</mark></p>
+
+<p>这是完整的一个句子,将会分成段落,下面就是分成的段落</p>
+
+<p>如果不加<q>p</q>,空格有空行将会被忽略.</p>
+
+<p><s>这些事删除的字</s></p>
+
+<p>加上p标签就不会被省略,哎呀,忘了 <i>i标签</i> 是什么语义了,并且<strong>strong</strong>标签的强调效果似乎没有用.</p>
+
+<p>记录一下我写这些的时间<time datetime="2016-10-24">2016.10.24</time></p>
+
+<div class="favorites">
+	
+<p>我正在学习<i>html</i></p>
+<s>我是个天才</s>
+<strong>Warning:</strong>外星人正在接近.<small>(嘿嘿!)</small>
+<abbr title="这是完整的一个句子">ZSWZDJZ</abbr>
+<br>
+<q>菜根谭</q>是一部奇作.
+<p>我真<mark>聪明</mark></p>
+
+<p>这是完整的一个句子,将会分成段落,下面就是分成的段落</p>
+
+<p>如果不加<q>p</q>,空格有空行将会被忽略.</p>
+
+<p><s>这些事删除的字</s></p>
+
+<p>加上p标签就不会被省略,哎呀,忘了 <i>i标签</i> 是什么语义了,并且<strong>strong</strong>标签的强调效果似乎没有用.</p>
+
+
+</div>
+
+<blockquote>这是引用一大段内容的标签</blockquote>
+
+	I like :
+	<ol>
+		<li value="2">香蕉</li>
+		<li value="1">苹果</li>
+		<li value="3">梨</li>
+		<li>草莓</li>
+		<li>西瓜</li>
+	</ol>
+	You can see other on the <a href="#otherLikes">here</a>
+	<ol id="otherLikes">
+		<li>芒果</li>
+		<li>椰子</li>
+		<li>樱桃</li>
+	</ol>
+
+	I hate:
+	<dl>
+		<dt>榴莲</dt>
+			<dd>太丑了</dd>	
+			<dd>太臭了</dd>
+		<dt>无</dt>
+		<dt>无</dt>
+	</dl>
+
+	<aside>
+		<h1>健康水果</h1>
+		<section>
+			
+		这是这些健康水果的益处:
+		<ol>
+			<li>好吃</li>
+			<li>补充维生素</li>
+			<li>补充能量</li>
+		</ol>
+
+		</section>
+
+	</aside>
 
 </body>
 </html>
