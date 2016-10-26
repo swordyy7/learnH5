@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>提交表单</title>
+	<link rel="shortcut icon" type="image/x-icon" href="source/Y_logo.png">
+	<base href="http://192.168.2.134:8080">
+
+</head>
+<body>
+<form method="post" >
+
+	<fieldset>
+	<legend style="text-align: center;">登录信息输入</legend>
+	<label>Username:<input type="text" name="username" placeholder="请输入用户名" autofocus="true"></label>
+	<br />
+	<label>Password :<input type="password" name="password" placeholder="请输入密码" disabled="true"></label>
+	<input type="number" name="number" max="3" min="2">
+	<input type="range" step="1" value="50" min="0" max="100">
+	<label><input type="radio" name="fave" value="apple">apples</label>
+	<label><input type="radio" name="fave" value="banana">banana</label>
+	<label><input type="radio" name="fave" value="others">others</label>
+	</fieldset>
+
+<br />
+
+<button type="reset">登录</button>
+<button type="button"><strong></strong>啥也不做</s></button>
+
+</form>
+
+<script type="text/javascript">
+
+	function getNameValue() {
+
+	var labelName  = document.getElementsByName("fave");
+
+	document.writeln(labelName.value);
+
+
+
+	}
+
+
+
+
+</script>
+
+
+</body>
+</html>

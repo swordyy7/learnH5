@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<meta charset="UTF-8">
+	<title>学习表格</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="source/Y_logo.png">
+
+	<style type="text/css">
+
+		#colgroup1 {
+
+			background-color: gray;
+			color: white;
+				
+		}
+
+		#colgroup2 {
+
+			background: yellow;
+			color: red;
+
+		}
+
+		#col1{
+
+			background-color: blue;
+
+			color: green;
+		}
+
+		tfoot>tr>th {
+
+			background-color: lightGray;
+			color: white;
+
+		}
+
+		[colspan],[rowspan] {
+
+			background-color: gray;
+			color: green;
+
+		}
+
+
+	</style>
+
+</head>
+<body>
+	<table border="1">
+
+	<colgroup>
+
+		<col id="col1" span="2 /">
+		<col id="colgroup1" span="2" />
+
+	</colgroup>
+
+	<thead>
+		<tr>
+		<th></th>
+		<th>类别</th>
+		<th>颜色</th>
+		<th>尺寸</th>
+		</tr>
+
+	</thead>
+
+	<tfoot>
+
+		<tr>
+
+			<th colspan="4">哎呦,你个小贱人</th>
+
+		</tr>
+
+	</tfoot>
+
+	<tbody>
+		<tr>
+			<th>Name:</th>
+			<td colspan="2">香蕉&苹果</td>
+			<td>雪梨</td>
+		</tr>
+		<tr>
+			<th>Color:</th>
+			<th>黄色</th>
+			<td>红色</td>
+			<td rowspan="2">绿色&小</td>
+		</tr>
+		<tr>
+			<th>Size:</th>
+			<th>大</th>
+			<td>中</td>
+		</tr>
+
+
+	</tbody>
+
+	</table>
+
+</body>
+</html>
